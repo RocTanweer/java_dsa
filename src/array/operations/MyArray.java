@@ -1,8 +1,7 @@
 package array.operations;
 
-import java.util.Arrays;
-
 import array.algorithms.*;
+import java.util.Arrays;
 
 public class MyArray {
     private final int[] array;
@@ -55,5 +54,25 @@ public class MyArray {
         } else {
             System.out.println("Element found at index: " + index);
         }
+    }
+
+    public void bubbleSort() {
+        BubbleSort.sort(array, currentSize);
+    }
+
+    public void selectionSort() {
+        SelectionSort.sort(array, currentSize);
+    }
+
+    public void insertionSort() {
+        InsertionSort.sort(array, currentSize);
+    }
+
+    public void quickSort() {
+        QuickSort.sort(array, 0, currentSize - 1);
+    }
+
+    public void mergeSort() {
+        MergeSort.sort(array, 0, currentSize - 1);
     }
 }

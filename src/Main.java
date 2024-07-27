@@ -5,10 +5,17 @@ public class Main {
         MyArray array = new MyArray(10);
 
         // Define an array
-        int[] initArrayValue = { 1, 2, 3, 4, 5 };
+        int[] initArrayValue = { 3, 2, 1, 5, 4 };
         array.initArray(initArrayValue);
 
-        array.searchLinear(40);
-        array.searchBinary(5);
+        array.printArray();
+
+        // array.bubbleSort();
+        // array.selectionSort();
+        // array.insertionSort();
+        // array.quickSort();
+        array.mergeSort();
+
+        array.printArray();
     }
 }
