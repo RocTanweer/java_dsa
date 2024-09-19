@@ -6,7 +6,7 @@ public class MergeSort {
         int[] leftArray = new int[leftArrLen];
         int i;
 
-        int rightArrLen = high - low;
+        int rightArrLen = high - mid;
         int[] rightArray = new int[rightArrLen];
         int j;
 

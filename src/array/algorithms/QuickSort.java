@@ -10,7 +10,7 @@ public class QuickSort {
         for (int j = low; j < high; j++) {
             if (array[j] <= pivot) {
                 i++;
-                Util.swap(array, array[i], array[j]);
+                Util.swap(array, i, j);
             }
         }
         Util.swap(array, i + 1, high);
@@ -42,8 +42,8 @@ public class QuickSort {
 
     public static void sort(int[] array, int low, int high) {
         if (low < high) {
-            // int partitionIndex = lomutoPartition(array, low, high);
-            int partitionIndex = hoarePartition(array, low, high);
+            int partitionIndex = lomutoPartition(array, low, high);
+            // int partitionIndex = hoarePartition(array, low, high);
 
             sort(array, low, partitionIndex - 1);
             sort(array, partitionIndex + 1, high);
